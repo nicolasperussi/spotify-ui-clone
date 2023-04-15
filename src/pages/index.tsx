@@ -23,6 +23,7 @@ import {
 } from 'react-icons/io5';
 
 import { GiNextButton, GiPreviousButton } from 'react-icons/gi';
+import Head from 'next/head';
 
 export default function Home() {
 	const playlists = [
@@ -150,6 +151,9 @@ export default function Home() {
 
 	return (
 		<div className="h-screen flex flex-col overflow-hidden">
+			<Head>
+				<title>Spotify - Web Player: Music for Everyone</title>
+			</Head>
 			<div className="flex flex-1 max-h-[calc(100vh-96px)]">
 				<aside className="bg-sp-900 w-72 text-sp-highlight p-6">
 					<a href="#">
